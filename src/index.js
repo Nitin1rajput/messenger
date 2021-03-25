@@ -7,14 +7,13 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 
 //firebase configuration
-console.log(process.env.API_KEY);
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: `messenger-${process.env.PROJECT_ID}.firebaseapp.com`,
-  projectId: `messenger-${process.env.PROJECT_ID}`,
-  storageBucket: `messenger-${process.env.PROJECT_ID}.appspot.com`,
+  apiKey: "AIzaSyDpHOIqROUCqKfQwIRrSC9ma8y-8KBYOek",
+  authDomain: `messenger-bfee0.firebaseapp.com`,
+  projectId: `messenger-bfee0`,
+  storageBucket: `messenger-bfee0.appspot.com`,
   messagingSenderId: "225385233910",
-  appId: process.env.APP_ID,
+  appId: "	1:225385233910:web:e6257eb315f46d8725dbd7",
   measurementId: "G-MNR06JZRHN",
 };
 
