@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+}
+.listOfUsers {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  border-right: 1px solid #ccc;
+}
+.chatArea {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.911);
+}
+
+.displayName {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.displayName.active {
+  background: #ccc;
+}
+
+.displayName .displayPic {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.messageSections .displayPic {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.displayName .displayPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.online-status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  height: 10px;
+  background: #16e316;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #16e316;
+}
+.online-status.off {
+  background: green;
+  box-shadow: 0 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .add-user {
+    display: none;
+  }
+
+}

@@ -1,0 +1,40 @@
+.group {
+  position: relative;
+  flex: 10;
+}
+.group .form-input {
+  height: 4.5rem;
+  background: black;
+  background-color: #1b1717;
+  color: grey;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid rgb(88, 88, 88);
+}
+.group .form-input:focus {
+  outline: none;
+}
+.group .form-input:focus ~ .form-input-label {
+  /* top: -14px;
+  font-size: 12px;
+  color: black; */
+  display: none;
+}
+
+.group .form-input-label {
+  color: grey;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+.group .form-input-label.shrink {
+  display: none;
+}
