@@ -5,8 +5,7 @@ import App from "./App";
 import firebase from "firebase";
 import { Provider } from "react-redux";
 import store from "./store/store";
-import dotenv from "dot-env";
-dotenv.config();
+
 //firebase configuration
 console.log(process.env.API_KEY);
 const firebaseConfig = {
